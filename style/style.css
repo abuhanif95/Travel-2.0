@@ -356,6 +356,8 @@ nav > ul > li:first-child a:first-child {
 /* Deal and Discount Section */
 .deals-section {
   margin: 60px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .deals-section .deal {
@@ -426,36 +428,114 @@ nav > ul > li:first-child a:first-child {
 .deals-section .deal .card .price span {
   color: black;
 }
+
 .deals-section .deal .card button {
   width: fit-content;
 }
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  /* Our Popular Tour */
-  .popular-tour {
-    flex-direction: column;
-    gap: 30px;
-  }
 
-  .popular-tour h2 {
-    font-size: 28px;
-  }
-
-  /* Why choose us */
-  .choose-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .card-3 {
-    grid-column: span 1;
-    max-width: 100%;
-  }
-
-  .choose-card {
-    padding: 30px 20px;
-  }
-
-  .choose-card h3 {
-    font-size: 22px;
-  }
+.deals-section button {
+  margin: 0 auto;
 }
+
+/* Simple Perfect Place Section */
+.perfect-place-section {
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.perfect-place-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.perfect-place-content .left {
+  flex: 1;
+}
+
+.perfect-place-content .right {
+  flex: 1;
+}
+
+.perfect-place-content h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.perfect-place-content .subtitle {
+  color: #5a5a5d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.perfect-place-content ul {
+  list-style: none;
+  margin: 30px 0;
+}
+
+.perfect-place-content ul li {
+  color: #5a5a5d;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.perfect-place-content ul li i {
+  color: var(--primary-color);
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.perfect-place-content ul li strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* Video Container Styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+}
+
+.video-overlay h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
