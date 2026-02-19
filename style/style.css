@@ -295,19 +295,19 @@ nav > ul > li:first-child a:first-child {
 }
 
 .card-1 {
-  background: #fef5e7; 
+  background: #fef5e7;
   border-bottom: 4px solid #ff9f4b;
 }
 
 .card-2 {
-  background: #e8f4fd; 
+  background: #e8f4fd;
   border-bottom: 4px solid #4b9fff;
 }
 
 .card-3 {
-  background: #f0f9f0; 
+  background: #f0f9f0;
   border-bottom: 4px solid #4caf50;
-  grid-column: span 2; 
+  grid-column: span 2;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -353,6 +353,82 @@ nav > ul > li:first-child a:first-child {
   font-size: 15px;
 }
 
+/* Deal and Discount Section */
+.deals-section {
+  margin: 60px auto;
+}
+
+.deals-section .deal {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.082)),
+    url("../Images/Group\ 40.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 65px;
+  display: flex;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.deals-section .deal:nth-child(even) {
+  justify-content: end;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.082)),
+    url("../Images/Group\ 39.png");
+}
+
+.deals-section .deal .card {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.deals-section .deal .card .deal-meta {
+  display: flex;
+  gap: 15px;
+  color: #5a5a5d;
+  font-size: 15px;
+}
+
+.deals-section .deal .card .deal-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deals-section .deal .card .deal-meta i {
+  color: var(--primary-color);
+}
+
+.deals-section .deal .card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.deals-section .deal .card p {
+  color: #5a5a5d;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.deals-section .deal .card .price {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.deals-section .deal .card .price span {
+  color: black;
+}
+.deals-section .deal .card button {
+  width: fit-content;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   /* Our Popular Tour */
