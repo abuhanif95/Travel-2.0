@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHT Travel</title>
     <link rel="stylesheet" href="style/style.css" />
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header Section -->
@@ -24,5 +29,54 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Main Section -->
+    <main>
+      <section class="container banner-section">
+        <div class="banner-content">
+          <h2>Explore Your Travel</h2>
+          <p>
+            Discover amazing destinations around the world with SHT Travel. From
+            breathtaking landscapes to vibrant cultures, we create unforgettable
+            journeys tailored just for you.
+          </p>
+
+          <form class="search-form">
+            <input type="text" placeholder="Where to go" class="form-input" />
+
+            <select name="when" id="when" class="form-select">
+              <option value="" selected disabled>When</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+
+            <select name="type" id="type" class="form-select">
+              <option value="" selected disabled>Select Type</option>
+              <option value="adventure">Adventure</option>
+              <option value="beach">Beach</option>
+              <option value="cultural">Cultural</option>
+              <option value="luxury">Luxury</option>
+              <option value="budget">Budget</option>
+              <option value="family">Family</option>
+              <option value="honeymoon">Honeymoon</option>
+            </select>
+
+            <button type="submit" class="btn search-btn">
+              <i class="fas fa-search"></i> Find Now
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
